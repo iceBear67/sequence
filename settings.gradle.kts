@@ -5,6 +5,6 @@ pluginManagement {
     }
 }
 
-rootProject.name = "forktest"
+rootProject.name = "sequence"
 
-include("forktest-api", "forktest-server")
+include("sequence-api", "sequence-server")
