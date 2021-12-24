@@ -1,0 +1,19 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: iceBear67 <icebear67@sfclub.cc>
+Date: Fri, 24 Dec 2021 23:10:37 +0800
+Subject: [PATCH] Fix buildscript
+
+
+diff --git a/build.gradle.kts b/build.gradle.kts
+index 3402023871594508ee32263883f211356577c0bb..8667fc566565def0b204fb58a1f276b91df81152 100644
+--- a/build.gradle.kts
++++ b/build.gradle.kts
+@@ -19,7 +19,7 @@ repositories {
+ 
+ dependencies {
+     // ForkTest start
+-    implementation(project(":forktest-api"))
++    implementation(project(":sequence-api"))
+     implementation("io.papermc.paper:paper-mojangapi:1.18-R0.1-SNAPSHOT") {
+         exclude("io.papermc.paper", "paper-api")
+     }
